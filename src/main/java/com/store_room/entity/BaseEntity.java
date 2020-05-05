@@ -113,4 +113,5 @@ public class BaseEntity implements Serializable{
     public void setUpdataTime(String updataTime) {
         this.updataTime = updataTime;
     }
+
 }
