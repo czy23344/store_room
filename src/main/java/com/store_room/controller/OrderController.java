@@ -36,7 +36,7 @@ public class OrderController extends ApiController {
      * @param order 查询实体
      * @return 所有数据
      */
-    @GetMapping
+    @GetMapping("query")
     public R selectAll(Page<Order> page, Order order) {
         return success(this.orderService.page(page, new QueryWrapper<>(order)));
     }

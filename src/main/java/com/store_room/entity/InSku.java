@@ -9,7 +9,7 @@ import lombok.Data;
  * @author makejava
  * @since 2020-05-05 18:30:27
  */
-@TableName("InSku")
+@TableName("in_sku")
 @Data
 public class InSku implements Serializable{
     //库存id
@@ -18,7 +18,5 @@ public class InSku implements Serializable{
     private String shopId;
     //入库的商品数量
     private Integer num;
-
-
 
 }
