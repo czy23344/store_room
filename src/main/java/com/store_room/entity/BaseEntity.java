@@ -23,37 +23,38 @@ public class BaseEntity implements Serializable{
     /**
      * 创建人id
      */
-    @Column(name = "FOUNDER_Id", length = 200)
-    private String founderId;
+    @Column(name = "CREATE_ID", length = 200)
+    private String createId;
 
     /**
      * 创建人
      */
-    @Column(name = "FOUNDER", length = 200)
-    private String founder;
+    @Column(name = "CREATE_USER", length = 200)
+    private String createUser;
 
     /**
      * 创建时间
      */
-    @Column(name = "FOUNDER_TIME", length = 200)
-    private String foundertime;
+    @Column(name = "CREATE_TIME", length = 200)
+    private String createTime;
+
     /**
      * 修改人id
      */
-    @Column(name = "REVISER_Id", length = 200)
-    private String reviserId;
+    @Column(name = "UPDATA_ID", length = 200)
+    private String updataId;
 
     /**
      * 修改人
      */
-    @Column(name = "REVISER", length = 200)
-    private String reviser;
+    @Column(name = "UPDATA_USER", length = 200)
+    private String updataUser;
 
     /**
      * 修改时间
      */
-    @Column(name = "REVISER_TIME", length = 200)
-    private String revisertime;
+    @Column(name = "UPDATA_TIME", length = 200)
+    private String updataTime;
 
 
 
@@ -65,53 +66,51 @@ public class BaseEntity implements Serializable{
         this.id = id;
     }
 
-    public String getFounder() {
-        return founder;
+    public String getCreateId() {
+        return createId;
     }
 
-    public void setFounder(String founder) {
-        this.founder = founder;
+    public void setCreateId(String createId) {
+        this.createId = createId;
     }
 
-    public String getFoundertime() {
-        return foundertime;
+    public String getCreateUser() {
+        return createUser;
     }
 
-    public void setFoundertime(String foundertime) {
-        this.foundertime = foundertime;
+    public void setCreateUser(String createUser) {
+        this.createUser = createUser;
     }
 
-    public String getReviser() {
-        return reviser;
+    public String getCreateTime() {
+        return createTime;
     }
 
-    public void setReviser(String reviser) {
-        this.reviser = reviser;
+    public void setCreateTime(String createTime) {
+        this.createTime = createTime;
     }
 
-    public String getRevisertime() {
-        return revisertime;
+    public String getUpdataId() {
+        return updataId;
     }
 
-    public void setRevisertime(String revisertime) {
-        this.revisertime = revisertime;
+    public void setUpdataId(String updataId) {
+        this.updataId = updataId;
     }
 
-    public String getFounderId() {
-        return founderId;
+    public String getUpdataUser() {
+        return updataUser;
     }
 
-    public void setFounderId(String founderId) {
-        this.founderId = founderId;
+    public void setUpdataUser(String updataUser) {
+        this.updataUser = updataUser;
     }
 
-    public String getReviserId() {
-        return reviserId;
+    public String getUpdataTime() {
+        return updataTime;
     }
 
-    public void setReviserId(String reviserId) {
-        this.reviserId = reviserId;
+    public void setUpdataTime(String updataTime) {
+        this.updataTime = updataTime;
     }
-
-
 }
